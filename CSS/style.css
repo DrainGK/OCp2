@@ -1,15 +1,23 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&family=Urbanist:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800');
 
+html{
+    width: 100vw;
+}
 body
 {
-    font-family: 'Open Sans', sans-serif;
-    width: 100%;
+    font-family: 'Raleway', sans-serif;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     margin: 0 auto;
+    overflow-x: hidden;
 }
 
 .content{
     max-width: 1400px;
-    width: 98%;
+    width: 100%;
     margin: 0 auto;
 }
 
@@ -75,7 +83,7 @@ nav a:focus{
     color: #0065FC;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
 
     header{
         width: 100%;
@@ -135,7 +143,7 @@ header h2{
     font-size: 20px;
 }
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 767px){
 
 
     header h1{
@@ -207,7 +215,7 @@ header h2{
 
 
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 767px){
 
     .rechercher{
         width: 100%;
@@ -281,9 +289,9 @@ header h2{
     color:#0065FC;
 }
 
-.fltr:hover i{
+.fltr:hover {
     transition: 200ms;
-    transform: scale(1.1) rotate(1turn);
+    background: #DEEBFF;
 }
 
 #filtres .important{
@@ -295,7 +303,7 @@ header h2{
     flex-wrap: wrap;
 }
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 767px){
     #filtres{
         display: flex;
         flex-direction: column;
@@ -351,9 +359,15 @@ article{
     background-color: #F2F2F2;
     width: 65%;
     max-width: 880px;
-    height: fit-content;
+    height: 637px;
     border-radius: 30px;
-    padding-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#H{
+    margin-left: 2rem;
 }
 
 main h1{
@@ -368,13 +382,14 @@ main h1{
     width: 90%;
     margin: 0 auto;
     display: grid;
+    justify-content: center;
     grid-template-columns: 30% 30% 30%;
     grid-template-rows: 40% 40%;
-    gap: 6%;
+    gap: 30px;
 }
 
 .bulle{
-    width: 230px;
+    width: 220px;
     height: fit-content;
     display: flex;
     flex-direction: column;
@@ -385,12 +400,15 @@ main h1{
 }
 
 .bulle .icone{
-    width: 223px;
+    width: 213px;
     height: 124px;
-    margin: 4px;
     object-fit: cover;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
+}
+
+.icone{
+    margin: 4px;
 }
 
 .bulle i{
@@ -403,14 +421,12 @@ main h1{
 
 .bulle .name{
     padding: 0px 10px 10px 20px;
-}
+    font-size: 0.9rem}
 
 article .important{
     font-weight: 700;
     font-size: 17px;
     margin-left: 40px;
-    margin-bottom: 40px;
-    margin-top: 90px;
 }
 
 aside{
@@ -425,12 +441,16 @@ aside{
     justify-content: space-between;
 }
 
+.name2{
+    font-size: 0.9rem;
+}
+
 .aside-content{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     height: fit-content;
-    gap: 25px;
+    gap: 20px;
 }
 
 .pop{
@@ -483,7 +503,7 @@ aside{
     color: #dcdcdc;
 }
 
-@media screen and (max-width: 992px){
+@media screen and (min-width: 768px) and (max-width:991px) {
     main{
         display: flex;
         flex-direction: column;
@@ -501,23 +521,29 @@ aside{
 
     aside{
         width: 85%;
+        min-width: fit-content;
         min-height: 200px;
     }
 
     .aside-content{
         display: flex;
+        flex-direction: row;
         height: fit-content;
-        justify-content: space-between;
+        width: fit-content;
+        margin: 0 auto;
+        gap: 10px;
     }
 
     .bulle2 .icone2{
-        width: 100px;
+        width: 80px;
         height: 140px;
     }
 
     .bulle2{
-        width: 252px;
+        width: 232px;
+        padding: 0;
     }
+    
 
     article h2{
         margin-left: 10px;
@@ -525,7 +551,7 @@ aside{
 }
 
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 767px){
 
     main{
         display: flex;
@@ -547,7 +573,10 @@ aside{
 
     .aside-content{
         display: block;
+        width: 375px;
         height: fit-content;
+        margin: 0 auto;
+
     }
 
     aside .pop{
@@ -565,7 +594,7 @@ aside{
         margin: 1em auto;
         height: fit-content;
         max-height: none;
-        min-width: none;
+        min-width: 334px;
     }
 
     aside .bulle2 .icone2{
@@ -610,10 +639,7 @@ aside{
     }
 
     article .important{
-        position: relative;
-        top: 20px;
-        left: -18px;
-        font-size: 20px;
+        display: none;
     }
 
 }
@@ -622,7 +648,7 @@ aside{
 
 #activites{
     max-width: 1400px;
-    margin: 60px auto 20px auto;
+    margin: 0;
 }
 
 .tex
@@ -638,16 +664,18 @@ aside{
     padding: 12px 20px;
 }
 
+.BC{
+    margin: 2rem auto;
+    width: 100%;
+}
+
 .acti
 {
     margin: 20px auto;
     max-width: 1400px;
-    width: 100%;
     display: flex;
     justify-content: space-between;
     height: 475px;
-    width: auto;
-    max-width: 1400px;
 }
 
 .activities-card
@@ -733,22 +761,18 @@ aside{
     margin-top: auto;
 }
 
-@media screen and (min-width: 769px){
-    .acti{
-        width: 90%;
-    }
-
-    #activites{
-        width: 90%;
-        margin: 45px auto 30px auto;
-    }
-}
-
-@media screen and (max-width: 992px){
+@media screen and (min-width: 768px) and (max-width:991px){
 
     .acti{
         height: 400px;
     }
+
+    #activites{
+        width: 100%;
+        padding-left: 15px;
+        margin: 45px auto 30px auto;
+    }
+
     .acti p {
         height: 30px;
         font-size: 0.9em;
@@ -759,7 +783,7 @@ aside{
     }
 }
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 767px){
 
     .BC{
         background-color: rgb(249, 249, 249);
@@ -777,11 +801,13 @@ aside{
         height: 1000px;
         margin-left: 2em;
         background-color: rgb(249, 249, 249);
+        width: fit-content;
     }
 
     #grandi, #moyeni, #petiti, #grandi2, #petiti2, #moyeni2{
 
-        width: 420px;
+        width: 375px;
+        /* max-width: 100% ; */
         height: 200px;
         margin: 15px auto;
     }
@@ -797,7 +823,6 @@ footer
     margin: 0 auto;
     padding-top: 20px;
     padding-bottom: 20px;
-    padding-left: 2em;
 }
 
 #optionfoot
@@ -807,14 +832,21 @@ footer
     max-width: 1400px;
     justify-content: flex-start;
     margin: auto;
+    margin-left: 1rem;
+
 }
 
+.foot-option{
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+}
 .options
 {
     margin-right: 15%;
 }
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 767px){
 
     footer{
         padding: 0;
@@ -822,7 +854,7 @@ footer
     
     #optionfoot{
     flex-direction: column;
-    width: 70%;
+    width: 100%;
     justify-content: space-between;
     margin-left: 5%;
     }
