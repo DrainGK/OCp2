@@ -303,3 +303,343 @@ header h2{
     flex-wrap: wrap;
 }
 
+@media screen and (max-width: 767px){
+    #filtres{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .filtrescont{
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+
+    #filtres .important{
+        margin-bottom: 15px;
+        margin-top: 10px;
+        font-weight: 700;
+    }
+
+    .fltr{
+        margin-right: 10px;
+        margin-bottom: 15px;
+        width: 180px;
+        
+    }
+}
+
+.info{
+    max-width: 1400px;
+    width: 100%;
+    margin: auto auto 30px auto;
+}
+
+.info i{
+    color: #0065FC;
+    border: #e8e8e8 2px solid;
+    padding: 3px 8px;
+    border-radius: 15px;
+    align-items: center;
+    margin-right: 10px;
+    margin-left: 0;
+}
+
+/* MAIN MAIN MAIN */
+main{
+    max-width: 1400px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+article{
+    background-color: #F2F2F2;
+    width: 65%;
+    max-width: 880px;
+    height: 637px;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#H{
+    margin-left: 2rem;
+}
+
+main h1{
+    font-size: 20px;
+    font-weight: 800;
+    padding-top: 40px;
+    padding-left: 30px;
+    margin-bottom: 22px;
+}
+
+.hebergements{
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 30% 30% 30%;
+    grid-template-rows: 40% 40%;
+    gap: 30px;
+}
+
+.bulle{
+    width: 220px;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: rgb(208, 208, 208) 3px 3px 10px;
+    margin-bottom: 35px;
+}
+
+.bulle .icone{
+    width: 213px;
+    height: 124px;
+    object-fit: cover;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.icone{
+    margin: 4px;
+}
+
+.bulle i{
+    color: #0065FC;
+}
+
+.bulle .grised i{
+    color: #dcdcdc;
+}
+
+.bulle .name{
+    padding: 0px 10px 10px 20px;
+    font-size: 0.9rem}
+
+article .important{
+    font-weight: 700;
+    font-size: 17px;
+    margin-left: 40px;
+}
+
+aside{
+    background-color: #F2F2F2;
+    width: 25%;
+    min-width: 300px;
+    min-height: 500px;
+    padding: 3%;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.name2{
+    font-size: 0.9rem;
+}
+
+.aside-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: fit-content;
+    gap: 20px;
+}
+
+.pop{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+}
+
+.pop .txt{
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.pop i{
+    font-size: 20px;
+}
+
+.bulle2{
+    width: 100%;
+    background-color: white;
+    height: 140px;
+    min-height: 140px;
+    padding: 7px;
+    border-radius: 20px;
+    box-shadow: rgb(208, 208, 208) 3px 3px 10px;
+    display: flex;
+}
+
+.bulle2 .icone2{
+    width: 150px;
+    height: 140px;
+    object-fit: cover;
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+}
+
+.bulle2 .des{
+    padding: 15px 15px 8px 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.bulle2 i{
+    color: #0065FC;
+}
+
+.bulle2 .grised i{
+    color: #dcdcdc;
+}
+
+@media screen and (min-width: 768px) and (max-width:991px) {
+    main{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        width: 100%;
+        font-size: 0.9em;
+    }
+
+    article{
+        width: 100%;
+        margin-bottom: 50px;
+    }
+
+    aside{
+        width: 85%;
+        min-width: fit-content;
+        min-height: 200px;
+    }
+
+    .aside-content{
+        display: flex;
+        flex-direction: row;
+        height: fit-content;
+        width: fit-content;
+        margin: 0 auto;
+        gap: 10px;
+    }
+
+    .bulle2 .icone2{
+        width: 80px;
+        height: 140px;
+    }
+
+    .bulle2{
+        width: 232px;
+        padding: 0;
+    }
+    
+
+    article h2{
+        margin-left: 10px;
+    }
+}
+
+
+@media screen and (max-width: 767px){
+
+    main{
+        display: flex;
+        flex-direction: column-reverse;
+        width: 100%;
+        margin: 40px auto 0px auto;
+        align-items: center;
+        padding: 0;
+    }
+
+    aside{
+        width: 100%;
+        min-width: 320px;
+        padding: 0 0 25px 0;
+        height: fit-content;
+        max-height: none;
+        border-radius: 0;
+    }
+
+    .aside-content{
+        display: block;
+        width: 375px;
+        height: fit-content;
+        margin: 0 auto;
+
+    }
+
+    aside .pop{
+        width: 90%;
+        margin: 40px auto 15px auto;
+    }
+
+    aside .pop .txt{
+        font-weight: 900;
+    }
+
+    aside .bulle2{
+        width: 88%;
+        padding: 5px;
+        margin: 1em auto;
+        height: fit-content;
+        max-height: none;
+        min-width: 334px;
+    }
+
+    aside .bulle2 .icone2{
+        object-fit: cover;
+        margin: 0;
+        padding: 0;
+    }
+
+    aside .des{
+        padding: 5% 2% 5% 5%;
+        max-height:none;
+    }
+
+    article{
+        width: 100%;
+        background-color: rgb(249, 249, 249);
+        height: fit-content;
+        border-radius: 0;
+    }
+
+    article .hebergements{
+        display: block;
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    article .bulle{
+        width: 100%;
+        max-width: none;
+        margin: 10px auto;
+        padding: 1px;
+        border-radius: 25px;
+    }
+
+    article .bulle .icone{
+        width: 98%;
+    }
+
+    main h1{
+       padding-top: 15px;
+       margin-bottom: 10px;
+    }
+
+    article .important{
+        display: none;
+    }
+
+}
