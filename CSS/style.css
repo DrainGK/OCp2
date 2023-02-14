@@ -815,3 +815,47 @@ aside{
 
 /*FOOTER*/
 
+footer
+{
+    background-color:#efefef;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#optionfoot
+{
+    display: flex;
+    width: 100%;
+    max-width: 1400px;
+    justify-content: flex-start;
+    margin: auto;
+    margin-left: 1rem;
+
+}
+
+.foot-option{
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+}
+.options
+{
+    margin-right: 15%;
+}
+
+@media screen and (max-width: 767px){
+
+    footer{
+        padding: 0;
+    }
+    
+    #optionfoot{
+    flex-direction: column;
+    width: 100%;
+    justify-content: space-between;
+    margin-left: 5%;
+    }
+}
