@@ -643,3 +643,175 @@ aside{
     }
 
 }
+
+
+
+#activites{
+    max-width: 1400px;
+    margin: 0;
+}
+
+.tex
+{
+    position: absolute;
+    bottom: -18px;
+    font-size: 0.9em;
+    left: 0px;
+    right: 0px;
+    background-color: white;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    padding: 12px 20px;
+}
+
+.BC{
+    margin: 2rem auto;
+    width: 100%;
+}
+
+.acti
+{
+    margin: 20px auto;
+    max-width: 1400px;
+    display: flex;
+    justify-content: space-between;
+    height: 475px;
+}
+
+.activities-card
+{   
+    width: 22%;
+    height: 450px;
+}
+
+
+/*ICONES*/
+
+#grandi
+{
+    height: 450px;
+    width: 100%;
+    background: url(../images/vieuxport.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    border-radius: 20px;
+    box-shadow: #d6d6d6 2px 2px 5px;
+}
+
+#moyeni
+{
+    height: 450px;
+    width: 100%;
+    background: url(../images/fort.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    border-radius: 20px;
+    box-shadow: #d6d6d6 2px 2px 5px;
+}
+
+#petiti
+{
+    height: 450px;
+    width: 100%;
+    background: url(../images/frioul.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    border-radius: 20px;
+    margin-top: auto;
+    box-shadow: #d6d6d6 2px 2px 5px;
+}
+
+#grandi2
+{
+    height: 450px;
+    width: 100%;
+    background: url(../images/calanques.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    border-radius: 20px;
+    box-shadow: #d6d6d6 2px 2px 5px;
+}
+
+#petiti2
+{
+    height: 450px;
+    width: 100%;
+    background: url(../images/dame.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    border-radius: 20px;
+    box-shadow: #d6d6d6 2px 2px 5px;
+}
+
+#moyeni2
+{
+    height: 450px;
+    width: 100%;
+    background: url(../images/longchamp.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    border-radius: 20px;
+    box-shadow: #d6d6d6 2px 2px 5px;
+    margin-top: auto;
+}
+
+@media screen and (min-width: 768px) and (max-width:991px){
+
+    .acti{
+        height: 400px;
+    }
+
+    #activites{
+        width: 100%;
+        padding-left: 15px;
+        margin: 45px auto 30px auto;
+    }
+
+    .acti p {
+        height: 30px;
+        font-size: 0.9em;
+    }
+
+    #grandi, #moyeni, #petiti, #grandi2, #petiti2, #moyeni2{
+        height: 300px;
+    }
+}
+
+@media screen and (max-width: 767px){
+
+    .BC{
+        background-color: rgb(249, 249, 249);
+    }
+
+    #activites{
+        width: 90%;
+        margin: 0 auto;
+        padding-top: 20px;
+    }
+
+    .acti{
+        display: flex;
+        flex-direction: column;
+        height: 1000px;
+        margin-left: 2em;
+        background-color: rgb(249, 249, 249);
+        width: fit-content;
+    }
+
+    #grandi, #moyeni, #petiti, #grandi2, #petiti2, #moyeni2{
+
+        width: 375px;
+        /* max-width: 100% ; */
+        height: 200px;
+        margin: 15px auto;
+    }
+}
+
+/*FOOTER*/
+
