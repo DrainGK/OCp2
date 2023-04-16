@@ -241,7 +241,7 @@ header h2{
         display:block;
         background-color: #0065FC;
         border-radius: 10px;
-        scale: 1.1;
+        transform: scale(1.1);
     }
 
     .btn{
